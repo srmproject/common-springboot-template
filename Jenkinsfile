@@ -20,7 +20,7 @@ pipeline {
                     }
                     
                     // delete docker image for disk size
-                    sh "docker rmi imagename"
+                    sh """docker rmi ${imagename}"""
                 }
             }
         }
